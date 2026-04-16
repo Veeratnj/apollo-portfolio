@@ -95,13 +95,13 @@ const HeroSection = () => {
               Enroll Now
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button> */}
-            <Button
+            {/* <Button
               size="lg"
               variant="outline"
               className="px-8 py-6 text-lg rounded-full border-2 border-yellow-300 text-white/90 hover:bg-yellow-50/20 transition-all font-semibold tracking-wide"
             >
               View Courses
-            </Button>
+            </Button> */}
           </motion.div>
         </div>
       </div>
