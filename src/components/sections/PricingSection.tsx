@@ -88,10 +88,11 @@ const PricingSection = () => {
 
                   <div className="space-y-4 mb-8">
                     {[
-                      "Weekend & evening batch seats",
-                      "Trainers from MNCs",
-                      "Course materials & project reviews",
-                      "Job-ready portfolio support",
+                      "Flexible weekend & evening batches",
+                      "Mentorship from experienced industry professionals",
+                      "Hands-on real-time projects with case studies",
+                      "Personalized career guidance & portfolio building",
+                      "Mock interviews & resume preparation support",
                     ].map((item) => (
                       <div key={item} className="flex items-center gap-3">
                         <div className="w-5 h-5 rounded-full bg-yellow-100 flex items-center justify-center">
