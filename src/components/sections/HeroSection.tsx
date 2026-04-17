@@ -41,6 +41,7 @@ const HeroSection = () => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8"
           >
             <Sparkles className="w-4 h-4 text-yellow-300" />
+            
             <span className="text-sm font-semibold text-yellow-700 tracking-wide">Apollo Computer Education</span>
           </motion.div>
 

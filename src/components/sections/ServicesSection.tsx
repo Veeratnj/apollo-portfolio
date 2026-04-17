@@ -126,7 +126,10 @@ const ServicesSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-yellow-100 text-red-700 text-sm font-semibold mb-6">
+          {/* <span className="inline-block px-4 py-2 rounded-full bg-yellow-100 text-red-700 text-sm font-semibold mb-6">
+            COURSE TRACKS
+          </span> */}
+          <span className="inline-block px-4 py-2 rounded-full bg-red-500 text-white text-sm font-semibold mb-6 tracking-wide">
             COURSE TRACKS
           </span>
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
