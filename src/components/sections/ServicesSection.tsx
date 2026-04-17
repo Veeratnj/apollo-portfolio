@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Cpu, Database, Cloud, ServerCog, Monitor, Code, Film } from "lucide-react";
+import { Cpu, Database, Cloud, ServerCog, Monitor, Code, Film, BookOpen, HardDrive } from "lucide-react";
 import FloatingShape from "@/components/3d/FloatingShape";
 
 const services = [
@@ -70,6 +70,17 @@ const services = [
     bgGlow: "bg-red-500/20",
   },
   {
+    icon: HardDrive,
+    title: "Hardware & Networking",
+    features: [
+      { label: "PC Hardware", desc: "Assembly, diagnostics, upgrades and system maintenance." },
+      { label: "Network Infrastructure", desc: "LAN/WAN setup, cabling, routers, switches and wireless networking." },
+      { label: "Security & Support", desc: "Firewall basics, server setup, troubleshooting and network administration." },
+    ],
+    gradient: "from-blue-500 to-cyan-500",
+    bgGlow: "bg-blue-300/20",
+  },
+  {
     icon: Film,
     title: "Animation & MMV",
     features: [
@@ -78,6 +89,17 @@ const services = [
       { label: "3D & VFX", desc: "Autodesk Combustion, 3DS Max, Maya and visual effects." },
     ],
     gradient: "from-red-500 to-yellow-400",
+    bgGlow: "bg-yellow-300/20",
+  },
+  {
+    icon: BookOpen,
+    title: "Accounting, GST & ERP Training",
+    features: [
+      { label: "Accounting Foundations", desc: "IT basics, MS Office, accounts, ledger posting and trial balance." },
+      { label: "Tally & ERP", desc: "Tally ERP 9/Prime, inventory, payroll, cost centres and advanced voucher handling." },
+      { label: "GST, Tax & SAP FICO", desc: "GST filing, TDS, PF/ESI, Income Tax and SAP Finance & Controlling workflows." },
+    ],
+    gradient: "from-yellow-400 to-red-500",
     bgGlow: "bg-yellow-300/20",
   },
 ];

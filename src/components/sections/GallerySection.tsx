@@ -3,20 +3,20 @@ import FloatingShape from "@/components/3d/FloatingShape";
 
 const images = [
   {
-    src: "/placeholder.svg",
-    alt: "Apollo training infrastructure",
+    src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    alt: "Students working together in a computer lab",
   },
   {
-    src: "/placeholder.svg",
-    alt: "Hands-on student lab environment",
+    src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
+    alt: "Group training session with laptops",
   },
   {
-    src: "/placeholder.svg",
-    alt: "Certificate achievement display",
+    src: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+    alt: "Hands-on IT hardware and networking training",
   },
   {
-    src: "/placeholder.svg",
-    alt: "Student success celebration",
+    src: "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1200&q=80",
+    alt: "Certified student receiving a training certificate",
   },
 ];
 
@@ -53,23 +53,25 @@ const GallerySection = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
-          {images.map((image, index) => (
-            <motion.div
-              key={image.alt}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="rounded-3xl overflow-hidden border border-red-100 shadow-xl"
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-72 object-cover"
-              />
-            </motion.div>
-          ))}
+        <div className="overflow-x-auto pb-4 -mx-6 px-6 lg:mx-0 lg:px-0">
+          <div className="flex gap-6 min-w-max">
+            {images.map((image, index) => (
+              <motion.div
+                key={image.alt}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="group rounded-3xl overflow-hidden border border-red-100 shadow-xl min-w-[80vw] sm:min-w-[45vw] md:min-w-[32vw] lg:min-w-[22vw]"
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-72 object-cover transition-transform duration-500 ease-out hover:scale-105"
+                />
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

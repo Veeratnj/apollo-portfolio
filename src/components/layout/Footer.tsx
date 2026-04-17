@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
             <div className="mb-6">
-              <span className="text-2xl font-display font-bold">Apollo Computer Education</span>
+              <span className="text-2xl font-display font-bold">Apollo Computer Education Ltd. Aminjikarai</span>
               <span className="block text-xs text-slate-400 tracking-widest uppercase mt-1">Aminjikarai, Chennai</span>
             </div>
             <p className="text-slate-400 leading-relaxed mb-6 max-w-md font-body">
@@ -37,6 +37,8 @@ const Footer = () => {
               <li><a href="#services" className="hover:text-yellow-300 transition-colors">Generative AI & LLMs</a></li>
               <li><a href="#services" className="hover:text-yellow-300 transition-colors">Data Science & Engineering</a></li>
               <li><a href="#services" className="hover:text-yellow-300 transition-colors">Full Stack & DevOps</a></li>
+              <li><a href="#services" className="hover:text-yellow-300 transition-colors">Hardware & Networking</a></li>
+              <li><a href="#services" className="hover:text-yellow-300 transition-colors">Accounting, GST & ERP</a></li>
               <li><a href="#services" className="hover:text-yellow-300 transition-colors">Robotics & IoT</a></li>
             </ul>
           </div>
@@ -62,7 +64,7 @@ const Footer = () => {
 
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 text-sm font-body">
-            © 2026 Apollo Computer Education. All rights reserved.
+            © 2026 Apollo Computer Education Ltd. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-slate-500 font-body">
             <a href="#" className="hover:text-yellow-300 transition-colors">Privacy Policy</a>

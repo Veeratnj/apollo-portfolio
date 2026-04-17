@@ -50,9 +50,9 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 leading-tight tracking-tight"
           >
-            <span>Trending #1</span>
+            <span className="text-yellow-300">Trending #1</span>
             <br />
-            <span className="text-gradient">Generative AI & LLM Engineering</span>
+            <span className="text-yellow-300">Generative AI & LLM Engineering</span>
           </motion.h1>
 
           <motion.p
@@ -61,7 +61,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-slate-100 mb-10 max-w-3xl mx-auto font-body"
           >
-            Apollo Computer Education, Aminjikarai, Chennai. Learn AI, data, cloud, full-stack, DevOps and animation with weekend and evening batches.
+            Apollo Computer Education Ltd., Aminjikarai, Chennai. Learn AI, data, cloud, full-stack, DevOps, accounting and animation with weekend and evening batches.
           </motion.p>
 
           <motion.div
@@ -71,10 +71,13 @@ const HeroSection = () => {
             className="grid gap-4 md:grid-cols-2 max-w-3xl mx-auto mb-12"
           >
             {[
-              "Prompt Engineering & LangChain",
+              "GenAI & LangChain",
               "SQL, Spark, Airflow & Kafka",
               "React + FastAPI/Django",
               "AWS, Docker & CI/CD",
+              "Tally, SAP FICO & GST",
+              // "Hardware & Networking",
+              "Animation & MMV"
             ].map((item) => (
               <div key={item} className="rounded-full bg-yellow-100/90 px-5 py-4 text-sm font-semibold text-foreground shadow-lg">
                 {item}

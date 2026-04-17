@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="glass-card rounded-2xl px-6 py-3 flex items-center justify-between">
           <a href="#" className="flex items-center gap-3">
             <div className="flex flex-col">
-              <span className="text-xl font-display font-bold text-foreground">Apollo Computer Education</span>
+              <span className="text-xl font-display font-bold text-foreground">Apollo Computer Education Ltd.</span>
               <span className="block text-xs text-muted-foreground tracking-widest uppercase">Aminjikarai, Chennai</span>
             </div>
           </a>
