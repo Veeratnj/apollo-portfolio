@@ -53,25 +53,23 @@ const GallerySection = () => {
           </p>
         </motion.div>
 
-        <div className="overflow-x-auto pb-4 -mx-6 px-6 lg:mx-0 lg:px-0">
-          <div className="flex gap-6 min-w-max">
-            {images.map((image, index) => (
-              <motion.div
-                key={image.alt}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group rounded-3xl overflow-hidden border border-red-100 shadow-xl min-w-[80vw] sm:min-w-[45vw] md:min-w-[32vw] lg:min-w-[22vw]"
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-72 object-cover transition-transform duration-500 ease-out hover:scale-105"
-                />
-              </motion.div>
-            ))}
-          </div>
+        <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-2">
+          {images.map((image, index) => (
+            <motion.div
+              key={image.alt}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="group rounded-3xl overflow-hidden border border-red-100 shadow-xl"
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-72 object-cover transition-transform duration-500 ease-out hover:scale-105"
+              />
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
